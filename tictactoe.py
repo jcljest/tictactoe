@@ -79,11 +79,11 @@ class Renderer:
         assets_dir = os.path.join(base_dir, "assets")
 
         self.x_img = pygame.image.load(
-            os.path.join(assets_dir, "x.svg")
+            os.path.join(assets_dir, "x.png")
         ).convert_alpha()
 
         self.o_img = pygame.image.load(
-            os.path.join(assets_dir, "o.svg")
+            os.path.join(assets_dir, "o.png")
         ).convert_alpha()
 
         self.x_img = pygame.transform.smoothscale(
