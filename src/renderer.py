@@ -1,7 +1,7 @@
 import pygame
 import os
-from config import WIDTH, CELL_SIZE, BG_COLOR, ROWS, HEIGHT, GRID_COLOR, TEXT_COLOR, COLS, Board
-from gamelogic import TicTacToe
+from .config import WIDTH, CELL_SIZE, BG_COLOR, ROWS, HEIGHT, GRID_COLOR, TEXT_COLOR, COLS, Board
+from .gamelogic import TicTacToe
 
 # =========================
 # Renderer
@@ -12,7 +12,7 @@ class Renderer:
         self.font = pygame.font.SysFont(None, 64)
 
         base_dir = os.path.dirname(__file__)
-        assets_dir = os.path.join(base_dir, "assets")
+        assets_dir = os.path.join(base_dir, "../assets")
 
         self.x_img = pygame.image.load(
             os.path.join(assets_dir, "x.png")

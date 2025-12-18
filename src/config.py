@@ -5,7 +5,7 @@ from typing import Optional, List
 
 
 WIDTH, HEIGHT = 600, 600
-ROWS, COLS = 10, 10
+ROWS, COLS = 4, 4
 CELL_SIZE = WIDTH // COLS
 FPS = 60
 

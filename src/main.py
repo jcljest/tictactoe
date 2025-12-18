@@ -1,7 +1,7 @@
 import pygame
-from config import WIDTH, HEIGHT, CELL_SIZE, FPS
-from renderer import Renderer
-from gamelogic import TicTacToe
+from .config import WIDTH, HEIGHT, CELL_SIZE, FPS
+from .renderer import Renderer
+from .gamelogic import TicTacToe
 
 # =========================
 # Main Loop

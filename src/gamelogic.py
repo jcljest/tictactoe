@@ -1,12 +1,12 @@
 from typing import Optional
-from config import Player, Board
+from .config import Player, Board
 
 # =========================
 # Game Logic
 # =========================
 class TicTacToe:
     def __init__(self):
-        self.board: Board = [[None for _ in range(10)] for _ in range(10)]
+        self.board: Board = [[None for _ in range(4)] for _ in range(4)]
         self.current_player: Player = "X"
         self.winner: Optional[Player] = None
         self.is_draw = False
@@ -39,8 +39,8 @@ class TicTacToe:
 
         lines.extend(self.board)
         lines.extend(zip(*self.board))
-        lines.append([self.board[i][i] for i in range(10)])
-        lines.append([self.board[i][2 - i] for i in range(10)])
+        lines.append([self.board[i][i] for i in range(4)])
+        lines.append([self.board[i][2 - i] for i in range(4)])
 
         for line in lines:
             if line[0] is not None and all(cell == line[0] for cell in line):
